@@ -1,0 +1,314 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.backgound{
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://www.mebeldarom24.ru/11222-pic-hd/kukhnya-skandi-4.jpg);
+  position: absolute;
+  z-index: 2;
+  opacity: 0.4;
+}
+
+.main_body{
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 3;
+}
+
+.whiteblock{
+  background-color: #fff;
+  border: 1px solid #e4e3e3;
+  border-radius: 20px;
+  color: #40403f;
+}
+
+.t-l{
+  text-align: left;
+}
+.t-c{
+  text-align: center;
+}
+.t-r{
+  text-align: right;
+}
+
+/*.p-30{
+  padding: 30px;
+}
+.p-60{
+  padding: 60px;
+}*/
+
+.container-fluid{
+  padding: 0px;
+}
+.container{
+  padding: 0px;
+}
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 960px;
+  }
+  .title{
+    font-size: 7vh;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px){
+  .title{
+    font-size: 7vh;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px){
+  .title{
+    font-size: 5vh;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 576px){
+  .title{
+    font-size: 5vh;
+    line-height: 1;
+  }
+}
+  
+
+.row{
+  margin: 0px;
+}
+
+
+.phone_block{
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  margin-left: auto;
+  width: fit-content;
+  padding: 10px;
+  text-align: center;
+}
+.phone_title{
+  font-size: 2.5vh;
+}
+.phone_number{
+  font-size: 3vh;
+}
+.quiz_phone_block .phone_title{
+  font-size: 2.5vh;
+}
+.quiz_phone_block .phone_number{
+  font-size: 2.5vh;
+}
+
+.cg_w700{
+  font-weight: 700;
+  color: #24b745;
+}
+
+
+.adv_block{
+  padding: 40px 60px 40px 60px;
+}
+.main_body .adv_title{
+  font-size: 4vh;
+}
+.main_body .subadv_title{
+  font-size: 2vh;
+  font-weight: 700;
+
+  margin: 0px;
+  line-height: 1.2;
+}
+.main_body .subadv_text{
+  font-size: 2vh;
+
+  margin: 0px;
+  line-height: 1.2;
+}
+.bl-g{
+  border-left: 6px solid #24b745;
+}
+
+.main_button{
+  background-color: #24b745;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 4vh;
+  padding: 15px;
+}
+.quiz_button{
+  background-color: #24b745;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 3vh;
+  padding: 15px;
+}
+
+.card_answer{
+  cursor: pointer;
+  border: 1px solid #e4e3e3;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.card_answer:hover{
+  background-color: #fbfafa;
+  border: 1px solid #52bd22;
+  box-shadow: 0px 0px 0px 3px rgba(216, 212, 212, 0.8);
+}
+.card_answer.active{
+  background-color: #818883;
+  color: #fff;
+}
+.card_answer .answer_text{
+  font-size: 2vh;
+}
+
+.kitchen_answer .answer_text{
+  font-size: 2.5vh;
+}
+
+.sale_block{
+  background-color: #f7f6f6;
+  padding: 30px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sale_block .sale_text{
+  font-size: 2vh;
+}
+.sale_block .assistant__title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #2e2e54;
+  line-height: 1.125;
+}
+.sale_block .assistant__subtitle {
+  font-size: 12px;
+  color: #69748c;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0;
+}
+.sale_block .assistant_message{
+  background: #fff;
+  padding: 5px 10px;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.05);
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.05);
+  border-radius: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  max-height: 100%;
+  color: #2e2e49;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.54;
+}
+
+.sale_block .sale_count{
+  font-size: 3.5vh;
+  background-color: #22ca4d;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.29);
+}
+
+.quizbody .quiztitle{
+  font-size: 2.5vh;
+}
+
+.img-thumbnailz{
+  border-radius: 100%;
+}
+
+
+.sale_text{
+  font-size: 2.5vh;
+}
+
+.sale_desc{
+  font-size: 1.5vh;
+}
+
+.inputmyquiz{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  transition: 0.5s;
+}
+.inputmyquiz:focus{
+  outline-color: #28a745;
+  border: 2px solid #28a745;
+}
+.sendbutton{
+  margin: auto;
+  background-color: #22ca4d;
+  border: none;
+  color: white;
+  font-size: 19px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.29);
+}
+.textform{
+  font-weight: 600;
+}
+.form_agreement{
+  font-size: 12px;
+}
+
+.quizblock{
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: show 1s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 0s;
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
